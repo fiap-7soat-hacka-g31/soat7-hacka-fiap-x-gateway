@@ -11,6 +11,7 @@ on:
 
 env:
   TF_VAR_aws_account_id: ${{ secrets.AWS_ACCOUNT_ID }}
+  TF_VAR_eks_loadbalance_listener_uri: ${{ secrets.AWS_EKS_LOADBALANCER_LISTENER_URI }}
 
 permissions:
   pull-requests: write
