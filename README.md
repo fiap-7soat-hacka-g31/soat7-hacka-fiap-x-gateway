@@ -1,16 +1,11 @@
-# Fiap Burger Gateway Terraform
+# Tech Challenge FIAP Project
 
-```bash
-# import environment variables (from .env)
-export $(grep -v '^#' .env | xargs)
+Este repositório contem o códido fonte Terraform utilizado para provisionar um APIGateway na AWS. Os mapeamentos necessários para acessar as aplicações FiapBurgerIdentity(lambda) e FiapBurgerApp também são gerenciados por meio deste repositorio. Para ver a documentação do projeto, acessar a página da org no Github: https://github.com/FIAP-7SOAT-TCG31
 
-# validate
-terraform fmt --check
-terraform validate
+## Integrantes do Grupo 7SOAT-31:
 
-# plan
-terraform plan
-
-# apply
-terraform apply --auto-approve
-```
+- Julio Augusto Silva (RM355432)
+- Lucas Henrique de Oliveira Silva (RM354904)
+- Getúlio Magela Silva (RM355427)
+- Lucas Rego Lima (RM356101)
+- Lilian Rosario de Jesus (RM355928)
