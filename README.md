@@ -1,6 +1,6 @@
 # Tech Challenge FIAP Project
 
-Este repositório contem o códido fonte Terraform utilizado para provisionar um APIGateway na AWS. Os mapeamentos necessários para acessar as aplicações FiapBurgerIdentity(lambda) e FiapBurgerApp também são gerenciados por meio deste repositorio. Para ver a documentação do projeto, acessar a página da org no Github: https://github.com/FIAP-7SOAT-TCG31
+Este repositório contem o códido fonte Terraform utilizado para provisionar um APIGateway na AWS. Os mapeamentos necessários para acessar as aplicações FiapBurgerIdentity(lambda), FiapBurgerPayments, FiapBurgerPreparation e FiapBurgerOrder também são gerenciados por meio deste repositorio. Para ver a documentação do projeto, acessar a página da org no Github: https://github.com/FIAP-7SOAT-TCG31
 
 ## Integrantes do Grupo 7SOAT-31:
 
