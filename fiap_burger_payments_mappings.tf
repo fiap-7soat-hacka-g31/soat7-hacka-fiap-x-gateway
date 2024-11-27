@@ -11,12 +11,12 @@ resource "aws_apigatewayv2_integration" "fiap_burger_payments" {
 ## Route Mappings
 resource "aws_apigatewayv2_route" "fiap_burger_payments_approve" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "PATCH /fiap-burger-payments/v1/payments/{id}/approve"
+  route_key = "PATCH /dev/fiap-burger-payments/v1/payments/{id}/approve"
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_payments.id}"
 }
 
 resource "aws_apigatewayv2_route" "fiap_burger_payments_reject" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "PATCH /fiap-burger-payments/v1/payments/{id}/reject"
+  route_key = "PATCH /dev/fiap-burger-payments/v1/payments/{id}/reject"
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_payments.id}"
 }
