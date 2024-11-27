@@ -51,12 +51,6 @@ resource "aws_apigatewayv2_route" "fiap_burger_order_complete" {
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_order.id}"
 }
 
-resource "aws_apigatewayv2_route" "fiap_burger_order_complete" {
-  api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "POST /fiap-burger-order/v1/orders/{id}/complete"
-  target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_order.id}"
-}
-
 resource "aws_apigatewayv2_route" "fiap_burger_order_follow_up" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
   route_key = "GET /fiap-burger-order/v1/orders-follow-up"
