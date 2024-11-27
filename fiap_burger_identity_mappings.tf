@@ -1,7 +1,7 @@
 data "terraform_remote_state" "fiap_burger_identity" {
   backend = "s3"
   config = {
-    bucket = "tfstate-fiap-7soat-tcg31"
+    bucket = "tfstate-fiap-7soat-f4-tcg31"
     key    = "global/s3/auth-lambda.tfstate"
     region = "us-east-1"
   }

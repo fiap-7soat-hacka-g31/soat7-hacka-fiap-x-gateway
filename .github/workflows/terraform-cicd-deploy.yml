@@ -10,8 +10,9 @@ on:
   workflow_dispatch:
 
 env:
-  TF_VAR_aws_account_id: ${{ secrets.AWS_ACCOUNT_ID }}
-  TF_VAR_eks_loadbalance_listener_uri: ${{ secrets.AWS_EKS_LOADBALANCER_LISTENER_URI }}
+  TF_VAR_aws_eks_lb_listener_payments_service: ${{ secrets.AWS_EKS_LB_LISTENER_PAYMENTS }}
+  TF_VAR_aws_eks_lb_listener_preparation_service: ${{ secrets.AWS_EKS_LB_LISTENER_PREPARATION }}
+  TF_VAR_aws_eks_lb_listener_order_service: ${{ secrets.AWS_EKS_LB_LISTENER_ORDER }}
 
 permissions:
   pull-requests: write
