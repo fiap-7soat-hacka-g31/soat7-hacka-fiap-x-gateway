@@ -11,18 +11,18 @@ resource "aws_apigatewayv2_integration" "fiap_burger_preparation" {
 ## Route Mappings
 resource "aws_apigatewayv2_route" "fiap_burger_preparation_advance" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "PATCH /dev/fiap-burger-preparation/v1/preparations/{id}/advance"
+  route_key = "PATCH /fiap-burger-preparation/v1/preparations/{id}/advance"
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_preparation.id}"
 }
 
 resource "aws_apigatewayv2_route" "fiap_burger_preparation_get" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "PATCH /dev/fiap-burger-preparation/v1/preparations/{id}"
+  route_key = "PATCH /fiap-burger-preparation/v1/preparations/{id}"
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_preparation.id}"
 }
 
 resource "aws_apigatewayv2_route" "fiap_burger_preparation_find" {
   api_id    = aws_apigatewayv2_api.fiap_burger.id
-  route_key = "PATCH /dev/fiap-burger-preparation/v1/preparations"
+  route_key = "PATCH /fiap-burger-preparation/v1/preparations"
   target    = "integrations/${aws_apigatewayv2_integration.fiap_burger_preparation.id}"
 }
