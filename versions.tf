@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "tfstate-fiap-7soat-f4-tcg31"
+    bucket = "tfstate-fiap-7soat-hacka-g31"
     key    = "global/s3/gtw.tfstate"
     region = "us-east-1"
   }
