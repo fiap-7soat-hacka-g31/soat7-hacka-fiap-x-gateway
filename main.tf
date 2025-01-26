@@ -20,7 +20,7 @@ data "terraform_remote_state" "fiap_x_eks" {
 }
 
 resource "aws_security_group" "vpc_link" {
-  name   = "fiap-burger-k8s-vpc-link"
+  name   = "fiap-x-k8s-vpc-link"
   vpc_id = data.terraform_remote_state.fiap_x_eks.outputs.fiap_x_vpc_id
 
   egress {
@@ -32,7 +32,7 @@ resource "aws_security_group" "vpc_link" {
 }
 
 resource "aws_apigatewayv2_vpc_link" "fiap_x_eks" {
-  name = "fiap-burger-eks"
+  name = "fiap-x-eks"
 
   security_group_ids = [
     aws_security_group.vpc_link.id
