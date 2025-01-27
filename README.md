@@ -1,8 +1,12 @@
-# Tech Challenge FIAP Project
+# FIAP X
 
-Este repositório contem o códido fonte Terraform utilizado para provisionar um APIGateway na AWS. Os mapeamentos necessários para acessar as aplicações FiapBurgerIdentity(lambda), FiapBurgerPayments, FiapBurgerPreparation e FiapBurgerOrder também são gerenciados por meio deste repositorio. Para ver a documentação do projeto, acessar a página da org no Github: https://github.com/FIAP-7SOAT-TCG31
+## FIAP - Software Architecture Hackaton - Fase 5
 
-## Integrantes do Grupo 7SOAT-31:
+Este projeto foi desenvolvido durante a `Fase V` do curso de `Arquitetura de Software` da FIAP como requisito para avaliação.
+
+Documentação completa do projeto disponível na página da organização no Github: https://github.com/fiap-7soat-hacka-g31
+
+## Integrantes do Grupo
 
 - Julio Augusto Silva (RM355432)
 - Lucas Henrique de Oliveira Silva (RM354904)
